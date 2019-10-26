@@ -1,0 +1,11 @@
+{
+   "name": "new-typeorm-project",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+  "scripts": {
+     "tsc": "tsc",
+     "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
+     "prod": "tsc && node ./build/app.js",
+     "migration:run": "ts-node ../node_modules/typeorm/cli.js migration:run"
+   }
+}
